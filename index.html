@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookSky</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    
+    
+    <div class="navbar">
+        <h1 >BookSky</h1>
+    </div>
+    <div class="container">
+        <div class="book-content">
+        <h2 class="title">One Piece</h2>
+        <h5 class="author">-Harish</h5>
+        <p class="description">One Piece is a Japanese manga series written and illustrated by Eiichiro Oda. It has been serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump since July 1997, with its individual chapters compiled into 106 tankōbon volumes as of July 2023.</p>
+        <button class="btn" onclick="del(event)">Delete</button>     
+        </div>
+
+        <div class="book-content">
+            <h2 class="title">Demon Slayer</h2>
+            <h5 class="author">-Harish</h5>
+            <p>Demon Slayer: Kimetsu no Yaiba is a Japanese manga series written and illustrated by Koyoharu Gotouge. It was serialized in Shueisha's shōnen manga magazine Weekly Shōnen Jump from February 2016 to May 2020, with its chapters collected in 23 tankōbon volumes   </p>
+            <button class="btn" onclick="del(event)">Delete</button>     
+            </div>
+    </div>
+   
+  
+    <div class="popupoverlay"></div>
+    <div class="pop-upbox">
+        <h2>Add Book</h2>
+        <form>
+            <input type="text" placeholder="Enter Book Title" id="book-title-input">
+            <input type="text" placeholder="Enter Book Author" id="book-author-input">
+            <textarea placeholder="Short Description" id="book-description-input"></textarea>
+            <center><button id="book-add"> Add </button>
+            <button id="book-cancel">Cancel</button></center>
+        </form>
+    </div>
+    <button class="add" id="add-popup-button">+</button>
+    <script src="script.js"></script>
+</body>
+</html>
